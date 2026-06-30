@@ -1,0 +1,20 @@
+code,country_cn,country_en,advanced_emerging,oil_net_position,inflation_targeting,fx_regime,cpi_energy_transport_share,fossil_fuel_subsidy_gdp,oil_import_dependence,energy_intensity,cbi_index,trade_openness,financial_dev_credit_gdp,notes
+AR,阿根廷,Argentina,emerging,balanced,0_unstable,managed,,,,,,,,通胀目标制曾实行后放弃；恶性通胀，样本需特殊处理；Vaca Muerta页岩使近年趋向净出口
+AU,澳大利亚,Australia,advanced,exporter_energy,1,float,,,,,,,,煤/LNG净出口大国，但原油为净进口；通胀目标制1993起
+BR,巴西,Brazil,emerging,balanced,1,float,,,,,,,,深海盐下油田后接近自给/略net exporter；通胀目标制1999起
+CA,加拿大,Canada,advanced,exporter,1,float,,,,,,,,主要石油净出口国（油砂）；通胀目标制1991起
+CN,中国,China,emerging,importer,0,managed,,,,,,,,全球最大石油净进口国之一；成品油价格管制；非正式通胀目标制
+FR,法国,France,advanced,importer,1_ECB,float_euro,,,,,,,,欧元区，货币政策由ECB统一（事实上的通胀目标制）
+DE,德国,Germany,advanced,importer,1_ECB,float_euro,,,,,,,,欧元区
+IN,印度,India,emerging,importer,1,managed,,,,,,,,大型石油净进口国；通胀目标制2016起；部分燃油补贴
+ID,印度尼西亚,Indonesia,emerging,importer,1,managed,,,,,,,,曾为OPEC成员，现为石油净进口国；历史上燃油补贴较高
+IT,意大利,Italy,advanced,importer,1_ECB,float_euro,,,,,,,,欧元区
+JP,日本,Japan,advanced,importer,1,float,,,,,,,,大型石油净进口国；通胀目标制2013起
+MX,墨西哥,Mexico,emerging,exporter,1,float,,,,,,,,石油出口国（产量趋降）；通胀目标制2001起
+RU,俄罗斯,Russia,emerging,exporter,1,managed,,,,,,,,主要石油出口国；通胀目标制2014/15起；2022后数据与制裁需注明
+SA,沙特阿拉伯,Saudi Arabia,emerging,exporter,0,peg,,,,,,,,主要石油出口国；本币盯住美元；无通胀目标制
+ZA,南非,South Africa,emerging,importer,1,float,,,,,,,,石油净进口国；通胀目标制2000起
+KR,韩国,South Korea,advanced,importer,1,float,,,,,,,,大型石油净进口国；通胀目标制1998/2001起
+TR,土耳其,Turkey,emerging,importer,1_unorthodox,managed,,,,,,,,石油净进口国；名义通胀目标制但近年非常规政策、高通胀
+GB,英国,United Kingdom,advanced,importer,1,float,,,,,,,,北海油田衰退后转为净进口；通胀目标制1992起
+US,美国,United States,advanced,balanced_exporter,1,float,,,,,,,,页岩革命后近自给/近年净出口；美联储2012起明确2%目标
