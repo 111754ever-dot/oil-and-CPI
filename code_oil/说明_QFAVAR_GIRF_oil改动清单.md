@@ -71,11 +71,15 @@
   └─ data/                  (若把 all_data.xlsx 放这里)
 ```
 
-**运行前必做（D4：先调试后定稿）**：把第 50-51 行的 MCMC 次数**先改小**：
+**★ 本版已并入 2 处"运行修复"（跑通后确认的）：**
+1. **MCMC 已设为调试值**：第 50-53 行 `nsave=2000, nburn=500, nthin=20`（几分钟~十几分钟）。**出定稿时再改回 `nsave=20000~50000`。**
+2. **日期本地化修复**：第 327-329 行——原 `datetime(dates,'InputFormat','yyyyMMM')` 在**中文 MATLAB(zh_CN)** 下无法识别英文月名 'Jul'，已改为：
 ```matlab
-nsave = 2000;   nburn = 500;   nthin = 20;   % 调试用(几分钟~十几分钟)
-% 结果正常后再改回 nsave=20000~50000 出定稿
+% ddates = datetime(dates,'InputFormat','yyyyMMM');
+dates = strtrim(string(dates));
+ddates = datetime(dates,'InputFormat','yyyyMMM','Locale','en_US');
 ```
+> 另：`all_data.xlsx` 需为**纯数值**（否则 `load_data_oil` 第 22 行 `TEA{:,2:end}` 会因"double 与 cell 无法串联"报错）。你 main 上的 `all_data.xlsx` 已转为纯数值 ✅。
 
 **跑通后看什么**：①分位数因子图(10/50/90 三线是否发散)；②因子对各全局变量的广义脉冲响应；③FEVD；④国别投影。
 

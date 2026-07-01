@@ -47,10 +47,10 @@ outpindx  = 2;              % 1: Unemployment; 2: Industrial Production (OECD da
 nhor      = 60;             % Horizon for IRFs, FEVDs, connectedness
 
 % Gibbs-relaed preliminaries
-nsave     = 50000;           % Number of draws to store
-nburn     = 2000;           % Number of draws to discard
+nsave     = 2000;           % Number of draws to store
+nburn     = 500;           % Number of draws to discard
 ngibbs    = nsave + nburn;  % Number of total draws
-nthin     = 50;
+nthin     = 20;
 iter      = 20;             % Print every "iter" iteration
 %--------------------------------------------------------------------------
 
@@ -324,7 +324,9 @@ end
 % 1) Plot factor estimates
 F = squeeze(mean(F_draws,3));
 plot_names = reshape(extractBefore(names,'.'),16,r);
-ddates = datetime(dates,'InputFormat','yyyyMMM');
+% ddates = datetime(dates,'InputFormat','yyyyMMM');
+dates = strtrim(string(dates));
+ddates = datetime(dates,'InputFormat','yyyyMMM','Locale','en_US');
 
 figure;
 for i = 1:r
