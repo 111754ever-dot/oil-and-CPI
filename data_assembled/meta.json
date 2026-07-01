@@ -1,0 +1,437 @@
+{
+  "countries_cn": [
+    "巴西",
+    "加拿大",
+    "中国",
+    "法国",
+    "德国",
+    "印度",
+    "印度尼西亚",
+    "意大利",
+    "日本",
+    "韩国",
+    "墨西哥",
+    "俄罗斯",
+    "南非",
+    "土耳其",
+    "英国",
+    "美国"
+  ],
+  "countries_en": [
+    "BR",
+    "CA",
+    "CN",
+    "FR",
+    "DE",
+    "IN",
+    "ID",
+    "IT",
+    "JP",
+    "KR",
+    "MX",
+    "RU",
+    "ZA",
+    "TR",
+    "GB",
+    "US"
+  ],
+  "Y_block_order": [
+    "CPI",
+    "IP",
+    "RATE",
+    "NEER"
+  ],
+  "g_order": [
+    "oil_prod",
+    "IGREA",
+    "loil_price",
+    "GSCPI",
+    "GEPU"
+  ],
+  "r": 4,
+  "ng": 5,
+  "nq": 3,
+  "p": 2,
+  "T": 248,
+  "sample": "2005-07..2026-02",
+  "fill_method": "linear interpolation; edge gaps held constant",
+  "filled_cells": [
+    {
+      "table": "Y",
+      "col": "CPI_US",
+      "month": "2025-10",
+      "filled_value": 2.8739
+    },
+    {
+      "table": "Y",
+      "col": "IP_CN",
+      "month": "2006-01",
+      "filled_value": 16.9333
+    },
+    {
+      "table": "Y",
+      "col": "IP_CN",
+      "month": "2006-02",
+      "filled_value": 17.3667
+    },
+    {
+      "table": "Y",
+      "col": "IP_CN",
+      "month": "2007-01",
+      "filled_value": 15.6667
+    },
+    {
+      "table": "Y",
+      "col": "IP_CN",
+      "month": "2007-02",
+      "filled_value": 16.6333
+    },
+    {
+      "table": "Y",
+      "col": "IP_CN",
+      "month": "2008-01",
+      "filled_value": 17.5333
+    },
+    {
+      "table": "Y",
+      "col": "IP_CN",
+      "month": "2008-02",
+      "filled_value": 17.6667
+    },
+    {
+      "table": "Y",
+      "col": "IP_CN",
+      "month": "2009-01",
+      "filled_value": 6.5667
+    },
+    {
+      "table": "Y",
+      "col": "IP_CN",
+      "month": "2009-02",
+      "filled_value": 7.4333
+    },
+    {
+      "table": "Y",
+      "col": "IP_CN",
+      "month": "2010-01",
+      "filled_value": 18.3667
+    },
+    {
+      "table": "Y",
+      "col": "IP_CN",
+      "month": "2010-02",
+      "filled_value": 18.2333
+    },
+    {
+      "table": "Y",
+      "col": "IP_CN",
+      "month": "2011-01",
+      "filled_value": 13.9333
+    },
+    {
+      "table": "Y",
+      "col": "IP_CN",
+      "month": "2011-02",
+      "filled_value": 14.3667
+    },
+    {
+      "table": "Y",
+      "col": "IP_CN",
+      "month": "2012-01",
+      "filled_value": 12.5
+    },
+    {
+      "table": "Y",
+      "col": "IP_CN",
+      "month": "2012-02",
+      "filled_value": 12.2
+    },
+    {
+      "table": "Y",
+      "col": "IP_CN",
+      "month": "2013-01",
+      "filled_value": 9.8333
+    },
+    {
+      "table": "Y",
+      "col": "IP_CN",
+      "month": "2013-02",
+      "filled_value": 9.3667
+    },
+    {
+      "table": "Y",
+      "col": "IP_CN",
+      "month": "2014-01",
+      "filled_value": 9.4
+    },
+    {
+      "table": "Y",
+      "col": "IP_CN",
+      "month": "2014-02",
+      "filled_value": 9.1
+    },
+    {
+      "table": "Y",
+      "col": "IP_CN",
+      "month": "2015-01",
+      "filled_value": 7.1333
+    },
+    {
+      "table": "Y",
+      "col": "IP_CN",
+      "month": "2015-02",
+      "filled_value": 6.3667
+    },
+    {
+      "table": "Y",
+      "col": "IP_CN",
+      "month": "2016-01",
+      "filled_value": 6.2
+    },
+    {
+      "table": "Y",
+      "col": "IP_CN",
+      "month": "2016-02",
+      "filled_value": 6.5
+    },
+    {
+      "table": "Y",
+      "col": "IP_CN",
+      "month": "2017-01",
+      "filled_value": 6.5333
+    },
+    {
+      "table": "Y",
+      "col": "IP_CN",
+      "month": "2017-02",
+      "filled_value": 7.0667
+    },
+    {
+      "table": "Y",
+      "col": "IP_CN",
+      "month": "2018-01",
+      "filled_value": 6.1333
+    },
+    {
+      "table": "Y",
+      "col": "IP_CN",
+      "month": "2018-02",
+      "filled_value": 6.0667
+    },
+    {
+      "table": "Y",
+      "col": "IP_CN",
+      "month": "2019-01",
+      "filled_value": 6.6333
+    },
+    {
+      "table": "Y",
+      "col": "IP_CN",
+      "month": "2019-02",
+      "filled_value": 7.5667
+    },
+    {
+      "table": "Y",
+      "col": "IP_CN",
+      "month": "2020-01",
+      "filled_value": 4.2333
+    },
+    {
+      "table": "Y",
+      "col": "IP_CN",
+      "month": "2020-02",
+      "filled_value": 1.5667
+    },
+    {
+      "table": "Y",
+      "col": "IP_CN",
+      "month": "2021-01",
+      "filled_value": 9.5667
+    },
+    {
+      "table": "Y",
+      "col": "IP_CN",
+      "month": "2021-02",
+      "filled_value": 11.8333
+    },
+    {
+      "table": "Y",
+      "col": "IP_CN",
+      "month": "2022-01",
+      "filled_value": 4.5333
+    },
+    {
+      "table": "Y",
+      "col": "IP_CN",
+      "month": "2022-02",
+      "filled_value": 4.7667
+    },
+    {
+      "table": "Y",
+      "col": "IP_CN",
+      "month": "2023-01",
+      "filled_value": 2.1667
+    },
+    {
+      "table": "Y",
+      "col": "IP_CN",
+      "month": "2023-02",
+      "filled_value": 3.0333
+    },
+    {
+      "table": "Y",
+      "col": "IP_CN",
+      "month": "2024-01",
+      "filled_value": 6.0333
+    },
+    {
+      "table": "Y",
+      "col": "IP_CN",
+      "month": "2024-02",
+      "filled_value": 5.2667
+    },
+    {
+      "table": "Y",
+      "col": "IP_CN",
+      "month": "2025-01",
+      "filled_value": 6.7
+    },
+    {
+      "table": "Y",
+      "col": "IP_CN",
+      "month": "2025-02",
+      "filled_value": 7.2
+    },
+    {
+      "table": "Y",
+      "col": "IP_CN",
+      "month": "2026-01",
+      "filled_value": 5.2
+    },
+    {
+      "table": "Y",
+      "col": "IP_CN",
+      "month": "2026-02",
+      "filled_value": 5.2
+    },
+    {
+      "table": "Y",
+      "col": "IP_IN",
+      "month": "2012-04",
+      "filled_value": -2.3754
+    },
+    {
+      "table": "Y",
+      "col": "IP_IN",
+      "month": "2012-05",
+      "filled_value": -1.9008
+    },
+    {
+      "table": "Y",
+      "col": "IP_IN",
+      "month": "2012-06",
+      "filled_value": -1.4262
+    },
+    {
+      "table": "Y",
+      "col": "IP_IN",
+      "month": "2012-07",
+      "filled_value": -0.9515
+    },
+    {
+      "table": "Y",
+      "col": "IP_IN",
+      "month": "2012-08",
+      "filled_value": -0.4769
+    },
+    {
+      "table": "Y",
+      "col": "IP_IN",
+      "month": "2012-09",
+      "filled_value": -0.0023
+    },
+    {
+      "table": "Y",
+      "col": "IP_IN",
+      "month": "2012-10",
+      "filled_value": 0.4723
+    },
+    {
+      "table": "Y",
+      "col": "IP_IN",
+      "month": "2012-11",
+      "filled_value": 0.9469
+    },
+    {
+      "table": "Y",
+      "col": "IP_IN",
+      "month": "2012-12",
+      "filled_value": 1.4215
+    },
+    {
+      "table": "Y",
+      "col": "IP_IN",
+      "month": "2013-01",
+      "filled_value": 1.8962
+    },
+    {
+      "table": "Y",
+      "col": "IP_IN",
+      "month": "2013-02",
+      "filled_value": 2.3708
+    },
+    {
+      "table": "Y",
+      "col": "IP_IN",
+      "month": "2013-03",
+      "filled_value": 2.8454
+    },
+    {
+      "table": "Y",
+      "col": "IP_ID",
+      "month": "2026-01",
+      "filled_value": 6.1492
+    },
+    {
+      "table": "Y",
+      "col": "IP_ID",
+      "month": "2026-02",
+      "filled_value": 6.1492
+    },
+    {
+      "table": "g",
+      "col": "loil_price",
+      "month": "2025-10",
+      "filled_value": 298.7607
+    },
+    {
+      "table": "g",
+      "col": "GEPU",
+      "month": "2025-12",
+      "filled_value": 371.0954
+    },
+    {
+      "table": "g",
+      "col": "GEPU",
+      "month": "2026-01",
+      "filled_value": 371.0954
+    },
+    {
+      "table": "g",
+      "col": "GEPU",
+      "month": "2026-02",
+      "filled_value": 371.0954
+    }
+  ],
+  "source_md5": {
+    "CPI.xlsx": "c1750fb6a741",
+    "工业生产指数.xlsx": "c8109cd1b7ec",
+    "政策利率_日本缺失赋值为0.xlsx": "c25bc3c2e1e9",
+    "名义有效汇率.xlsx": "2196fe3297a3",
+    "全球原油产量_数据处理后.xlsx": "ab208c8d027e",
+    "全球实际经济活动指数.xlsx": "7eee532f6505",
+    "对数实际油价.xlsx": "85057917bbb4",
+    "全球供应链压力指数GSCPI.xlsx": "b6e5e580ae0f",
+    "全球经济政策不确定指数GEPU.xlsx": "d1cebd98bbf3"
+  }
+}
