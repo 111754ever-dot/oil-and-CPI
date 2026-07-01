@@ -325,8 +325,7 @@ end
 F = squeeze(mean(F_draws,3));
 plot_names = reshape(extractBefore(names,'.'),16,r);
 % ddates = datetime(dates,'InputFormat','yyyyMMM');
-dates = strtrim(string(dates));
-ddates = datetime(dates,'InputFormat','yyyyMMM','Locale','en_US');
+ddates = datetime(2005,7,1) + calmonths((0:T-1)');   % 用样本起点+月数构造,避开月名区域问题
 
 figure;
 for i = 1:r
