@@ -13,10 +13,11 @@ function [x,xlag,T,n,k,g,ng,dates,namesX,namesYE,tcode] = load_data_oil(inflindx
 %  【修订记录】
 %   (1) 硬化"文本型数字": 用 tbl2num 把可能被存成文本的数字列稳妥转 double,
 %       避免 readtable 把整列读成字符串导致后续矩阵运算/ zscore 失败。
-%       (建议直接使用本目录下已清洗为纯数值的 all_data.xlsx。)
-%   (2) xlag 修正: 构造"真实一阶滞后"并丢弃首期(与作者一致), 使得即便将来
-%       设定 AR1x=1, 第一期也不会用"自己"作滞后。样本由 248 -> 247 个月
-%       (2005-08 ~ 2026-02), 少一个月, 对结论无实质影响。
+%       (建议直接使用本目录下已清洗为纯数值的 all_data.xlsx; 用原文件也可,
+%        tbl2num 会兜底。)
+%   (2) xlag: 保留全部 248 个月(基准 AR1x=0 不使用 xlag, 保留数据最优)。
+%       首期用自身占位, 在 AR1x=0 下无任何影响。若将来设定 AR1x=1, 请见
+%       下方第 6 步的注释, 取消两行注释以丢弃首期得到正确滞后。
 % ------------------------------------------------------------------------
 nq = numel(quant);
 
@@ -31,13 +32,12 @@ TGL     = readtable('all_data.xlsx','Sheet','Global','VariableNamingRule','prese
 namesYE = TGL.Properties.VariableNames(2:end);  % {'oil_prod','IGREA','loil_price','GSCPI','GEPU'}
 g       = tbl2num(TGL(:,2:end));                 % T0 x 5 数值
 
-%% ==== 3) xlag: 真实一阶滞后 + 丢弃首期(与作者一致) ====
-xlag    = x(1:end-1,:);      % 原 x 的滞后
-x       = x(2:end,:);        % x 从第 2 期起, 与 xlag 对齐
-g       = g(2:end,:);        % g 同步对齐
-datecol = datecol(2:end);    % 日期同步对齐
+%% ==== 3) xlag: 一阶滞后(基准 AR1x=0 不使用, 保留全部 248 个月) ====
+xlag = [x(1,:); x(1:end-1,:)];   % 首期用自身占位(AR1x=0 下无影响)
+% —— 若将来设定 AR1x=1, 取消下面两行注释以得到"真实滞后+丢首期"(样本 248->247):
+% xlag = x(1:end-1,:);  x = x(2:end,:);  g = g(2:end,:);  datecol = datecol(2:end);
 
-%% ==== 4) 日期 -> 'yyyyMMM' 字符串(如 '2005Aug') ====
+%% ==== 4) 日期 -> 'yyyyMMM' 字符串(如 '2005Jul') ====
 if ~isdatetime(datecol); datecol = datetime(datecol); end
 dates = cellstr(string(datecol,'yyyyMMM'));
 
@@ -45,7 +45,7 @@ dates = cellstr(string(datecol,'yyyyMMM'));
 namesX = strrep(xnm,'_','.')';                   % n x 1 cell
 
 %% ==== 6) 不做平稳化: tcode 全设 1 ====
-[T,n] = size(x);                                 % T=247, n=64
+[T,n] = size(x);                                 % T=248, n=64
 tcode = ones(1,n);
 
 %% ==== 7) QDFM(dfm=1): 丢弃全球变量 ====
